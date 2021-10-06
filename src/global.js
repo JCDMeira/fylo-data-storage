@@ -32,4 +32,6 @@ export const Conteiner = styled.div`
 export const Content = styled.div`
   width: 32.7rem;
   height: 48rem;
+  padding-top: 3.4rem;
+  background: white;
 `;

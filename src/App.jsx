@@ -1,4 +1,6 @@
 import React from 'react';
+import { FyloInfo } from './components/FyloInfo';
+import { Info } from './components/Info';
 import { GlobalStyle, Conteiner, Content } from './global';
 
 function App() {
@@ -8,7 +10,8 @@ function App() {
       <GlobalStyle />
       <Conteiner screenSize={widthDevice}>
         <Content>
-          <h1>hello world</h1>
+          <FyloInfo />
+          <Info />
         </Content>
       </Conteiner>
     </>
