@@ -1,15 +1,17 @@
-import './App.css';
 import React from 'react';
+import { GlobalStyle, Conteiner, Content } from './global';
 
 function App() {
+  const widthDevice = window.screen.width;
   return (
-    <div className="App">
-      <div className="conteiner">
-        <div className="content">
-          <h1>Hello world</h1>
-        </div>
-      </div>
-    </div>
+    <>
+      <GlobalStyle />
+      <Conteiner screenSize={widthDevice}>
+        <Content>
+          <h1>hello world</h1>
+        </Content>
+      </Conteiner>
+    </>
   );
 }
 
