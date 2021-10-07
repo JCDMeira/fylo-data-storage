@@ -17,6 +17,7 @@ html {
 
 export const Conteiner = styled.div`
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +31,7 @@ export const Conteiner = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 32.7rem;
+  width: 87.2%;
   height: 48rem;
-  padding-top: 3.4rem;
-  background: white;
+  padding-top: 3.3rem;
 `;
