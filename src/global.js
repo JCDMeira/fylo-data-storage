@@ -34,4 +34,11 @@ export const Content = styled.div`
   width: 87.2%;
   height: 48rem;
   padding-top: 3.3rem;
+
+  @media (min-width: 1200px) {
+    width: 63.81944vw;
+    height: 24rem;
+    display: flex;
+    padding-top: 0.9rem;
+  }
 `;

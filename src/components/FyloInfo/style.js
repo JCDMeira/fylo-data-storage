@@ -11,6 +11,11 @@ export const FyloDiv = styled.div`
     margin-left: 0.3rem;
     margin-bottom: 3.1rem;
   }
+  @media (min-width: 1200px) {
+    width: 348px;
+    height: 200px;
+    padding: 3.9rem 0 0 3.7rem;
+  }
 `;
 
 export const iconContent = styled.div`
