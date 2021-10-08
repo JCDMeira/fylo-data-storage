@@ -155,15 +155,6 @@ export const GbLeft = styled.div`
     margin-bottom: 10.5rem;
     margin-left: 28rem;
     /* clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% 75%,
-      100% 74%,
-      100% 100%,
-      85% 73%,
-      0% 75%
-    ); */
-    clip-path: polygon(
       0 0,
       100% 0%,
       100% 100%,
@@ -177,6 +168,9 @@ export const GbLeft = styled.div`
       1% 68%,
       0.5% 66%,
       0% 64%
+    ); */
+    clip-path: path(
+      'M0 10C0 4.47715 4.47715 0 10 0H169.947C175.491 0 179.976 4.5093 179.947 10.0526L179.5 95L159.942 75.0071C158.06 73.084 155.484 72 152.793 72H10C4.47715 72 0 67.5229 0 62V10Z'
     );
     padding-bottom: 2.6rem;
   }
