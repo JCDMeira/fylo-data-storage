@@ -40,15 +40,14 @@ Users should be able to:
 
 <p  align="center"><img width="720px" src="./presentation/desktop.png" align="center"></img></p>
 
-<!--
 ### result of my work
 
-<p  align="center"><img width="1080px" src="./presentation/design-x-myWork.gif" align="center"></img></p> -->
+<p  align="center"><img width="1080px" src="./presentation/design-x-myWork.gif" align="center"></img></p>
 
 ### Links
 
-<!-- - Solution URL: [My solution for this challenge](https://www.frontendmentor.io/solutions/single-price-grid-with-reactjs-YR5dhXAtZ)
-- Live Site URL: [check the result](https://jcdmeira-single-price.netlify.app) -->
+- Solution URL: [My solution for this challenge](https://www.frontendmentor.io/solutions/fylo-data-storage-with-react-and-styled-components-vmNXm8msz)
+- Live Site URL: [check the result](https://jcdmeira-fylo-data.netlify.app)
 
 - My figma design: [Figma](https://www.figma.com/file/j4m7wxjWq2cIh5PsdcJKqm/10-fylo-data?node-id=0%3A1)
 
@@ -58,6 +57,7 @@ Users should be able to:
 
 - Flexbox
 - Mobile-first workflow
+- [Styled components](https://styled-components.com) - CSS in js with stiled components
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
