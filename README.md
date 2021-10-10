@@ -26,7 +26,7 @@ Users should be able to:
 
 ## Screenshot
 
-<!-- ### Mobile design
+### Mobile design
 
 <p  align="center">
   <img width="300px" src="./presentation/mobile.png" align="center"></img>
@@ -40,6 +40,7 @@ Users should be able to:
 
 <p  align="center"><img width="720px" src="./presentation/desktop.png" align="center"></img></p>
 
+<!--
 ### result of my work
 
 <p  align="center"><img width="1080px" src="./presentation/design-x-myWork.gif" align="center"></img></p> -->
