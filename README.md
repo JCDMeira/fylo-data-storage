@@ -62,43 +62,70 @@ Users should be able to:
 
 ### What I learned
 
-<!--
-Using the grid template areas to define occupied spaces with an alias
+Using styled components and screen size property to differentiate behaviors from visual components.
 
-```CSS
-  .content {
-  display: grid;
-  gap: 0;
-  grid-template-areas:
-    'field1'
-    'field2'
-    'field3';
-}
+```JS
+import styled, { createGlobalStyle } from 'styled-components';
 
-.field1 {
-  grid-area: field1;
-}
-.field2 {
-  grid-area: field2;
-}
-.field3 {
-  grid-area: field3;
-}
-@media (min-width: 900px) {
-  .content {
-    grid-template-areas:
-      'field1 field1'
-      'field2 field3';
+export const Conteiner = styled.div`
+  background-image: url(${(props) =>
+    props.screenSize > 1024 ? backgroundDesktop : backgroundMobile});
+  background-size: ${(props) =>
+    props.screenSize > 1024 ? 'contain' : 'cover'};
+  background-position: bottom;
+`;
+```
+
+Using styled components and clip-path: with CSS path() function to define the shape using definition used in SVG.
+
+```JS
+import styled from 'styled-components';
+
+export const GbLeft = styled.div`
+  width: 179px;
+  height: 72px;
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 14.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    width: 18rem;
+    height: 9.5rem;
+    border-radius: 1rem 1rem 0 1rem;
+    margin-bottom: 10.5rem;
+    margin-left: 28rem;
+    clip-path: path(
+      'M0 10C0 4.47715 4.47715 0 10 0H169.947C175.491 0 179.976 4.5093 179.947 10.0526L179.5 95L159.942 75.0071C158.06 73.084 155.484 72 152.793 72H10C4.47715 72 0 67.5229 0 62V10Z'
+    );
+    padding-bottom: 2.6rem;
   }
-}
-``` -->
+`;
+```
+
+Use CSS clip-path with the PATH () function, in the internal property, the definition of an SVG image, which will define the format of the div.
+The format can be caught by exporting the ready drawing of Figma as SVG.
+
+<p  align="center"><img width="600px" src="./presentation/example.png" align="center"></img></p>
+
+When exporting as SVG it is possible to get the path, copy what is inner on the path path and paste inside the function -> clip-path: path ('path path contained in SVG -')
+
+<p  align="center"><img width="600px" src="./presentation/path.png" align="center"></img></p>
 
 ### Useful resources
 
 - [react tutorial](https://pt-br.reactjs.org/tutorial/tutorial.html) - This helped me structure the components and build the proposed page.
 - [my figma design](https://www.figma.com/file/j4m7wxjWq2cIh5PsdcJKqm/10-fylo-data?node-id=0%3A1) - My figma design for help anyone who wants to build this challenge.
 - [CSS units conversor - px to VH/VW/REM](https://it-news.pw/pxtovh/) - CSS units conversor .
-- [Converting Colors](<https://convertingcolors.com/hsl-color-179_62_43.html?search=HSL(179°,%2062%,%2043%)>) - HSL for all color systems.
+- [Converting Colors](https://convertingcolors.com) - HSL for all color systems.
+- [Clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) - The clip-path CSS property.
+- [Function Path](<https://developer.mozilla.org/en-US/docs/Web/CSS/path()>) - The path() CSS function accepts an SVG path string, and is used in CSS Shapes and CSS Motion Path to enable a shape to be drawn..
+- [Clip-path generator](https://bennettfeely.com/clippy/) - Generating the values for clip-path polygon .
+- [CSS background-image](https://blog.betrybe.com/css/css-background-image/) - Configuring the background image of an element.
+- [CSS background-size Property](https://www.w3schools.com/cssref/css3_pr_background-size.asp) - The background-size property specifies the size of the background images.
 
 ## Author
 
